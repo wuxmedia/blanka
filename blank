@@ -1,0 +1,11 @@
+#!/bin/bash
+# wux 2014-10-03
+#hopefully turn on blanking shit.
+
+#XLOCK SCREEENLOCKER:
+exec xautolock -notify 4 -time 20 -locker 'i3lock -d -i ~/Images/hollinlaptop.png' -corners +-00 -cornerdelay 4 -cornerredelay 4 &
+
+xset s blank
+xset s on
+xset +dpms
+echo "Full Blanking - screenlocker *enabled*"
